@@ -760,7 +760,7 @@ static CURLcode readwrite_data(struct Curl_easy *data,
              str buffer that weren't written to the client.
              Push it back to be read on the next pass. */
 
-          dataleft = conn->chunk.dataleft;
+          dataleft = conn->chunk.datasize;
           if(dataleft != 0) {
             infof(data, "Leftovers after chunking: %zu bytes\n", dataleft);
           }
