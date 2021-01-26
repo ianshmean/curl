@@ -161,7 +161,7 @@ static void setup(struct transfer *t, int num)
   curl_easy_setopt(hnd, CURLOPT_WRITEDATA, t->out);
 
   /* set the same URL */
-  curl_easy_setopt(hnd, CURLOPT_URL, "https://localhost:8443/index.html");
+  curl_easy_setopt(hnd, CURLOPT_URL, "https://api.github.com/repos/JuliaData/Parsers.jl/tarball/50c9a9ed8c714945e01cd53a21007ed3865ed714");
 
   /* please be verbose */
   curl_easy_setopt(hnd, CURLOPT_VERBOSE, 1L);
